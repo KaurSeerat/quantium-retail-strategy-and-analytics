@@ -1,146 +1,182 @@
-# Quantium Retail Strategy & Analytics
+# Quantium Retail Analytics Virtual Experience
 
-This repository contains my work completed as part of the Quantium Retail Strategy & Analytics Virtual Experience Program on Forage.
+This repository contains my work completed as part of Quantium's Retail Analytics Virtual Experience program.
 
-The project focuses on analysing supermarket transaction and customer data to understand purchasing behaviour within the chips category and generate commercially relevant recommendations for category strategy.
-
----
-
-# Project Objective
-
-The objective of the analysis was to identify:
-
-- Which customer segments contribute most strongly to chip sales
-- Purchasing behaviour differences across customer groups
-- Multi-pack buying behaviour
-- Brand and pack-size preferences
-- Seasonal sales trends
-- Customer segments that should be prioritised for future category planning
-
-The analysis was designed to support recommendations for the supermarket’s upcoming category review.
+The project focused on analysing customer purchasing behaviour in the chips category and evaluating the impact of trial store layouts using transactional and customer data.
 
 ---
 
-# Dataset
+# Project Overview
 
-The analysis used:
+The work was completed across three tasks:
 
-- 264,836 transaction records
-- 72,637 customer records
+1. Customer analytics and purchasing behaviour
+2. Trial store experimentation and uplift analysis
+3. Commercial reporting and business recommendations
 
-The datasets included:
+The goal was to translate raw retail transaction data into meaningful commercial insights that could support category planning and strategic decision-making.
 
-- transaction dates
-- store numbers
-- product names
-- quantities purchased
+---
+
+# Task 1 — Customer Analytics & Purchasing Behaviour
+
+## Objective
+
+Analyse customer transaction data to identify:
+
+- key customer segments
+- purchasing behaviour patterns
+- brand preferences
+- pack size trends
+- repeat purchasing behaviour
+
+## Work Completed
+
+### Data Preparation
+- Cleaned and merged transaction and customer datasets
+- Converted date columns and handled invalid transactions
+- Removed outliers (including extreme quantity purchases)
+- Extracted pack sizes and brand names from product descriptions
+
+### Exploratory Analysis
+Analysed:
 - total sales
-- loyalty card numbers
-- customer lifestage segmentation
-- premium customer segmentation
+- transactions
+- customer counts
+- pack sizes
+- brand distribution
+- monthly sales trends
 
----
+### Customer Segmentation
+Compared customer groups across:
+- LIFESTAGE
+- PREMIUM_CUSTOMER segments
 
-# Tools Used
-
-- Python
-- Pandas
-- Matplotlib
-- Jupyter Notebook
-- Excel (initial data inspection)
-
----
-
-# Analysis Performed
-
-## Data Preparation and Cleaning
-
-- Checked for missing values and inconsistent data types
-- Converted Excel serial dates into datetime format
-- Identified and removed transaction outliers
-- Standardised inconsistent brand names
-
-## Feature Engineering
-
-Derived additional analytical features including:
-
-- pack size extraction from product names
-- brand extraction and standardisation
-- multi-pack purchase indicator
-- transaction frequency metrics
+Metrics included:
+- total sales
+- transactions per customer
 - units per transaction
 - average price per unit
 
-## Customer Behaviour Analysis
+## Key Findings
 
-Analysed customer segments using:
-
-- total sales contribution
-- transaction frequency
-- basket size behaviour
-- multi-pack purchasing behaviour
-- average price per unit
-
-## Brand and Product Analysis
-
-- Identified highest-performing brands
-- Compared brand performance across customer segments
-- Examined pack-size purchasing patterns
-
-## Time-Based Analysis
-
-- Analysed monthly sales trends
-- Identified seasonal sales fluctuations and purchasing patterns
+- Older Families were the highest spending customer segment
+- Young Singles/Couples contributed strongly through customer volume
+- Kettle, Doritos and Smiths were the leading brands
+- 150g and 175g packs were the most commonly purchased pack sizes
+- Family-oriented segments purchased more frequently and in larger quantities
 
 ---
 
-# Key Findings
+# Task 2 — Trial Store Experimentation
 
-- Budget Older Families generated the highest overall chip sales.
-- Older Families showed the highest purchase frequency and strongest multi-pack purchasing behaviour.
-- Mainstream Young Singles/Couples represented the largest customer base and paid the highest average price per unit.
-- Kettle, Doritos and Smiths were the strongest-performing brands across the category.
-- Monthly sales showed a noticeable increase in December and decline in February, suggesting seasonal purchasing behaviour.
+## Objective
+
+Evaluate whether new store layouts improved sales performance in trial stores:
+
+- Store 77
+- Store 86
+- Store 88
+
+using matched control stores and historical benchmarking.
+
+## Work Completed
+
+### Store Matching
+Selected comparable control stores using:
+- sales correlation
+- customer correlation
+- magnitude similarity
+
+Final control stores:
+- Store 77 → Store 233
+- Store 86 → Store 155
+- Store 88 → Store 178
+
+### Trial Analysis
+- Created monthly store-level metrics
+- Split pre-trial and trial periods
+- Scaled control stores for fair comparison
+- Calculated percentage uplift
+- Performed statistical significance testing
+
+## Key Findings
+
+### Store 77
+- strongest uplift (~31%)
+- statistically significant improvement
+- successful trial outcome
+
+### Store 86
+- moderate uplift (~14%)
+- mixed evidence of significance
+
+### Store 88
+- negative trial performance
+- no evidence supporting rollout
 
 ---
 
-# Commercial Recommendations
+# Task 3 — Commercial Reporting
 
-## 1. Prioritise Budget Older Families
+Prepared a client-style PowerPoint presentation using the Pyramid Principle framework.
 
-This segment contributed strongly through frequent and higher-volume purchases.  
-Recommended actions include:
+The presentation included:
+- executive summary
+- customer insights
+- purchasing behaviour analysis
+- brand and pack size insights
+- trial store performance evaluation
+- recommendations and next steps
 
-- family-size packs
-- multi-buy promotions
-- value-focused offers
+The focus was on communicating analytical findings clearly to non-technical business stakeholders.
 
-## 2. Target Mainstream Young Singles/Couples
+---
 
-This segment showed the highest average price per unit and represented the largest customer group.  
-Recommended actions include:
+# Tools & Libraries
 
-- premium product positioning
-- convenience-focused offers
-- new flavour launches
+- Python
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- Jupyter Notebook
+- Excel
+- PowerPoint
 
-## 3. Maintain visibility for leading brands
+---
 
-Kettle, Doritos and Smiths consistently performed strongly across customer groups and should remain key focus brands within category planning and promotional activity.
+# Skills Demonstrated
+
+- Commercial Thinking
+- Communication Skills
+- Data Analysis
+- Data Cleaning
+- Data Validation
+- Data Visualization
+- Presentation Skills
+- Programming
+- Statistical Analysis
+- Customer Segmentation
+- Experimental Analysis
+- Business Reporting
 
 ---
 
 # Repository Structure
 
 ```text
-data/
-├── raw/
-└── processed/
+|── certification/
+├── data/
+├── images/
+├── task1/
+├── task2/
+|── task3_reporting/
+├── README.md
+```
 
-task1/
-├── notebook/
-├── report/
-└── images/
+---
 
-task2/
-task3/
+# Notes
+
+This project was completed for learning purposes as part of Quantium's Retail Analytics Virtual Experience program.
