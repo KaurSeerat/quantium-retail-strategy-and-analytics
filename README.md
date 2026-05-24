@@ -1,4 +1,4 @@
-# Quantium Retail Analytics — Forage Virtual Experience
+# Quantium Retail Analytics - Forage Virtual Experience
 
 Customer segmentation, trial store experimentation, and commercial reporting on retail transaction data. Completed as part of Quantium's Data Analytics job simulation on Forage.
 
@@ -6,24 +6,24 @@ Customer segmentation, trial store experimentation, and commercial reporting on 
 
 ## What the project covers
 
-Three connected tasks that follow how retail analytics actually flows — from understanding your customers, to testing a change, to explaining what it means to a business audience.
+Three connected tasks that follow how retail analytics actually flows,from understanding your customers, to testing a change, to explaining what it means to a business audience.
 
-**Task 1 — Customer analytics**
+**Task 1 - Customer analytics**
 
 Cleaned and merged transaction and customer datasets, extracted pack sizes and brand names from product descriptions, and analysed purchasing behaviour across customer segments (lifestage × premium tier).
 
 Key findings:
 - Older Families were the highest-spending segment in total sales
-- Young Singles/Couples contributed strongly through customer volume — a different commercial lever
+- Young Singles/Couples contributed strongly through customer volume, a different commercial lever
 - Kettle, Doritos and Smiths led brand sales
 - 150g and 175g were the most purchased pack sizes
 - Family segments bought more frequently and in larger quantities per transaction
 
-**Task 2 — Trial store experimentation**
+**Task 2 - Trial store experimentation**
 
 Evaluated whether new store layouts improved performance in three trial stores (77, 86, 88) using matched control stores and pre/post comparison.
 
-Control store matching used sales correlation, customer count correlation, and magnitude similarity — not just a simple average comparison.
+Control store matching used sales correlation, customer count correlation, and magnitude similarity, not just a simple average comparison.
 
 Results:
 - **Store 77**: ~31% uplift, statistically significant → clear case for rollout
