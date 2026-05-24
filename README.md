@@ -1,182 +1,56 @@
-# Quantium Retail Analytics Virtual Experience
+# Quantium Retail Analytics — Forage Virtual Experience
 
-This repository contains my work completed as part of Quantium's Retail Analytics Virtual Experience program.
-
-The project focused on analysing customer purchasing behaviour in the chips category and evaluating the impact of trial store layouts using transactional and customer data.
+Customer segmentation, trial store experimentation, and commercial reporting on retail transaction data. Completed as part of Quantium's Data Analytics job simulation on Forage.
 
 ---
 
-# Project Overview
+## What the project covers
 
-The work was completed across three tasks:
+Three connected tasks that follow how retail analytics actually flows — from understanding your customers, to testing a change, to explaining what it means to a business audience.
 
-1. Customer analytics and purchasing behaviour
-2. Trial store experimentation and uplift analysis
-3. Commercial reporting and business recommendations
+**Task 1 — Customer analytics**
 
-The goal was to translate raw retail transaction data into meaningful commercial insights that could support category planning and strategic decision-making.
+Cleaned and merged transaction and customer datasets, extracted pack sizes and brand names from product descriptions, and analysed purchasing behaviour across customer segments (lifestage × premium tier).
 
----
+Key findings:
+- Older Families were the highest-spending segment in total sales
+- Young Singles/Couples contributed strongly through customer volume — a different commercial lever
+- Kettle, Doritos and Smiths led brand sales
+- 150g and 175g were the most purchased pack sizes
+- Family segments bought more frequently and in larger quantities per transaction
 
-# Task 1 — Customer Analytics & Purchasing Behaviour
+**Task 2 — Trial store experimentation**
 
-## Objective
+Evaluated whether new store layouts improved performance in three trial stores (77, 86, 88) using matched control stores and pre/post comparison.
 
-Analyse customer transaction data to identify:
+Control store matching used sales correlation, customer count correlation, and magnitude similarity — not just a simple average comparison.
 
-- key customer segments
-- purchasing behaviour patterns
-- brand preferences
-- pack size trends
-- repeat purchasing behaviour
+Results:
+- **Store 77**: ~31% uplift, statistically significant → clear case for rollout
+- **Store 86**: ~14% uplift, mixed significance → inconclusive
+- **Store 88**: negative performance → data does not support rollout
 
-## Work Completed
+The Store 77/88 split is the interesting part. Same intervention, opposite outcomes. The analysis shows why you don't just look at the average across all trial stores.
 
-### Data Preparation
-- Cleaned and merged transaction and customer datasets
-- Converted date columns and handled invalid transactions
-- Removed outliers (including extreme quantity purchases)
-- Extracted pack sizes and brand names from product descriptions
+**Task 3 — Commercial reporting**
 
-### Exploratory Analysis
-Analysed:
-- total sales
-- transactions
-- customer counts
-- pack sizes
-- brand distribution
-- monthly sales trends
-
-### Customer Segmentation
-Compared customer groups across:
-- LIFESTAGE
-- PREMIUM_CUSTOMER segments
-
-Metrics included:
-- total sales
-- transactions per customer
-- units per transaction
-- average price per unit
-
-## Key Findings
-
-- Older Families were the highest spending customer segment
-- Young Singles/Couples contributed strongly through customer volume
-- Kettle, Doritos and Smiths were the leading brands
-- 150g and 175g packs were the most commonly purchased pack sizes
-- Family-oriented segments purchased more frequently and in larger quantities
+Built a client-style presentation using the Pyramid Principle: lead with the recommendation, support with evidence, don't make the stakeholder wade through methodology first. The output was structured for a category manager, not a data team.
 
 ---
 
-# Task 2 — Trial Store Experimentation
+## Tools
 
-## Objective
-
-Evaluate whether new store layouts improved sales performance in trial stores:
-
-- Store 77
-- Store 86
-- Store 88
-
-using matched control stores and historical benchmarking.
-
-## Work Completed
-
-### Store Matching
-Selected comparable control stores using:
-- sales correlation
-- customer correlation
-- magnitude similarity
-
-Final control stores:
-- Store 77 → Store 233
-- Store 86 → Store 155
-- Store 88 → Store 178
-
-### Trial Analysis
-- Created monthly store-level metrics
-- Split pre-trial and trial periods
-- Scaled control stores for fair comparison
-- Calculated percentage uplift
-- Performed statistical significance testing
-
-## Key Findings
-
-### Store 77
-- strongest uplift (~31%)
-- statistically significant improvement
-- successful trial outcome
-
-### Store 86
-- moderate uplift (~14%)
-- mixed evidence of significance
-
-### Store 88
-- negative trial performance
-- no evidence supporting rollout
+Python · Pandas · NumPy · Matplotlib · Seaborn · Jupyter Notebook
 
 ---
 
-# Task 3 — Commercial Reporting
+## Repository structure
 
-Prepared a client-style PowerPoint presentation using the Pyramid Principle framework.
-
-The presentation included:
-- executive summary
-- customer insights
-- purchasing behaviour analysis
-- brand and pack size insights
-- trial store performance evaluation
-- recommendations and next steps
-
-The focus was on communicating analytical findings clearly to non-technical business stakeholders.
-
----
-
-# Tools & Libraries
-
-- Python
-- pandas
-- numpy
-- matplotlib
-- seaborn
-- Jupyter Notebook
-- Excel
-- PowerPoint
-
----
-
-# Skills Demonstrated
-
-- Commercial Thinking
-- Communication Skills
-- Data Analysis
-- Data Cleaning
-- Data Validation
-- Data Visualization
-- Presentation Skills
-- Programming
-- Statistical Analysis
-- Customer Segmentation
-- Experimental Analysis
-- Business Reporting
-
----
-
-# Repository Structure
-
-```text
-|── certification/
-├── data/
-├── images/
-├── task1/
-├── task2/
-|── task3_reporting/
-├── README.md
 ```
-
----
-
-# Notes
-
-This project was completed for learning purposes as part of Quantium's Retail Analytics Virtual Experience program.
+task1/              ← customer analytics notebook
+task2/              ← trial store experimentation notebook
+task3_reporting/    ← presentation slides
+data/               ← transaction and customer datasets
+images/             ← charts and visualisation outputs
+certification/      ← completion certificate
+```
